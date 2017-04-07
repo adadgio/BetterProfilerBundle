@@ -1,5 +1,5 @@
 {
-    "name": "adadgio/BetterProfilerBundle",
+    "name": "adadgio/better-profiler-bundle",
     "type": "symfony-bundle",
     "description": "Adadgio BetterProfilerBundle",
     "license": "MIT",
