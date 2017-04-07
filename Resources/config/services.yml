@@ -1,0 +1,14 @@
+services:
+    adadgio_better_profiler.demo_service:
+        class: Adadgio\BetterProfilerBundle\Service\DemoService
+
+    adadgio_better_profiler.default_collector:
+        class: Adadgio\BetterProfilerBundle\DataCollector\DefaultCollector
+        arguments: [ '@service_container', '%adadgio_better_profiler%' ]
+        tags:
+            -
+                lazy: true
+                public: false
+                name: data_collector
+                template: 'AdadgioBetterProfilerBundle:DataCollector:default_collector'
+                id: 'adadgio_better_profiler.default_collector'
